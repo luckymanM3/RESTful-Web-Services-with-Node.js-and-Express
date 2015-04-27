@@ -10,13 +10,12 @@
     gulp
 
 
-### 02. Getting Data | 02_01-Introduction
+### 02. Getting Data | 02_02-Implementing HTTP Get
 
 http://localhost/api/books/
 
 
-### 02. Getting Data | 02_02-Implementing HTTP Get
-
+### 02. Getting Data | 02_03-Wiring up to MongoDB and Mongoose
 
     npm install mongoose --save
 
