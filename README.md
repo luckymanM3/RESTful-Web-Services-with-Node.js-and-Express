@@ -13,3 +13,11 @@
 ### 02. Getting Data | 02_01-Introduction
 
 http://localhost/api/books/
+
+
+### 02. Getting Data | 02_02-Implementing HTTP Get
+
+
+    npm install mongoose --save
+
+    http://localhost/api/books/
