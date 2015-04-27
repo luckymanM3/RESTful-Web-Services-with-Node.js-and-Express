@@ -19,4 +19,9 @@ http://localhost/api/books/
 
     npm install mongoose --save
 
-    http://localhost/api/books/
+http://localhost/api/books/
+
+
+### 02. Getting Data | 02_04-Filtering with the Query String
+
+http://localhost/api/books?genre=Science Fiction
