@@ -128,3 +128,9 @@ Integration Tests -> supertests
 ### 05. Testing | 05_05-Gulpmocha
 
     gulp test
+
+
+### 05. Testing | 05_06-Integration Tests with Supertest
+
+    npm install supertest gulp-env --save
+    gulp test
