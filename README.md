@@ -35,3 +35,19 @@ http://localhost/api/books/{id}
 ### 03. Posting Data | 03_02-Using Bodyparser
 
     npm install body-parser --save
+
+### 03. Posting Data | 03_03-Testing with Postman
+
+POSTMAN
+
+POST -> localhost:8080/api/books/
+
+Content-Type: Application/json
+
+raw
+
+{
+    "title": "My New Book",
+    "genre": "Fiction",
+    "author": "Jon Mills"
+}

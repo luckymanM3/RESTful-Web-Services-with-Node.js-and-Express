@@ -12,7 +12,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json);
+app.use(bodyParser.json());
 
 var bookRouter = express.Router();
 
@@ -61,7 +61,8 @@ bookRouter.route('/Books/:bookId')
 app.use('/api', bookRouter);
 
 app.get('/', function(req,res){
-    res.send('welcome to my App');
+    console.log('Welcome to my App');
+    res.send('Welcome to my App');
 });
 
 app.listen(port, function(){
