@@ -117,4 +117,14 @@ DELETE -> localhost/api/books/553f67e1ccaee53c0501de35
 Unit Testing -> mocha  
 Integration Tests -> supertests  
 
-### 05. Testing | 05_02-Controllers
+### 05. Testing | 05_03-Postman and Bugs
+
+
+### 05. Testing | 05_04-Unit Tests with Mocha
+
+    npm install gulp-mocha should sinon --save
+
+
+### 05. Testing | 05_05-Gulpmocha
+
+    gulp test
