@@ -46,11 +46,11 @@ Content-Type: Application/json
 
 raw
 
-{
-    "title": "My New Book",
-    "genre": "Fiction",
-    "author": "Jon Mills"
-}
+    {
+        "title": "My New Book",
+        "genre": "Fiction",
+        "author": "Jon Mills"
+    }
 
 
 ### 03. Posting Data | 03_04-Saving Data
@@ -73,12 +73,12 @@ PUT -> localhost/api/books/553f67e1ccaee53c0501de35
 
 Content-Type: Application/json
 
-{
-    "title": "My New Book 2",
-    "genre": "Fiction",
-    "author": "Jon Mills",
-    "read": false
-}
+    {
+        "title": "My New Book 2",
+        "genre": "Fiction",
+        "author": "Jon Mills",
+        "read": false
+    }
 
 
 http://localhost/api/books/
@@ -87,3 +87,19 @@ http://localhost/api/books/
 ### 04. Updating Data | 04_03-Testing Put
 
 ### 04. Updating Data | 04_04-Middleware
+
+### 04. Updating Data | 04_05-Implementing Patch
+
+### 04. Updating Data | 04_06-Testing Patch
+
+PATCH -> localhost/api/books/553f67e1ccaee53c0501de35
+
+Content-Type: Application/json
+
+    {
+
+        "read": true
+    }
+
+
+GET -> localhost/api/books/553f67e1ccaee53c0501de35

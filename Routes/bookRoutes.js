@@ -60,10 +60,32 @@ var routes = function(Book){
         book.genre = req.body.genre;
         book.read = req.body.read;
 
-        book.save();
+        book.save(function(err){
+            if(err){
+                res.status(500).send(err);
+            } else {
+                res.json(req.book);
+            }
+        });
+    })
+    .patch(function(req, res){
+        if(req.body._id){
+            delete req.body._id;
+        }
 
+        for(var p in req.body){
+            req.book[p] = req.body[p];
+        }
 
-        res.json(req.book);
+        req.book.save(function(err){
+            if(err){
+                res.status(500).send(err);
+            } else {
+                res.json(req.book);
+            }
+
+        });
+
     });
 
     return bookRouter;
