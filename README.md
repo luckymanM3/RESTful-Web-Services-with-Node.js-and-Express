@@ -64,3 +64,21 @@ POST -> localhost/api/books/553f67eeccaee53c0501de36
 
 
 ### 03. Posting Data | 03_06-Injecting Our Model
+
+
+### 04. Updating Data | 04_02-Implementing Put
+
+
+PUT -> localhost/api/books/553f67e1ccaee53c0501de35
+
+Content-Type: Application/json
+
+{
+    "title": "My New Book 2",
+    "genre": "Fiction",
+    "author": "Jon Mills",
+    "read": false
+}
+
+
+http://localhost/api/books/
