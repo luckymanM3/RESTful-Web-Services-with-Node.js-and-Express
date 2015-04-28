@@ -42,7 +42,7 @@ var routes = function(Book){
                 req.book = book;
                 next();
             } else {
-                res.json(404).send('no book found');
+                res.status(404).send('no book found');
             }
         });
     });
@@ -86,6 +86,15 @@ var routes = function(Book){
 
         });
 
+    })
+    .delete(function(req, res){
+        req.book.remove(function(err){
+            if(err){
+                res.status(500).send(err);
+            } else {
+                res.status(204).send('Removed');
+            }
+        });
     });
 
     return bookRouter;

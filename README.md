@@ -103,3 +103,9 @@ Content-Type: Application/json
 
 
 GET -> localhost/api/books/553f67e1ccaee53c0501de35
+
+
+### 04. Updating Data | 04_07-Implementing Remove
+
+
+DELETE -> localhost/api/books/553f67e1ccaee53c0501de35
