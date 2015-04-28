@@ -134,3 +134,7 @@ Integration Tests -> supertests
 
     npm install supertest gulp-env --save
     gulp test
+
+### 06. HATEOAS | 06_02-The Problem Around Navigating APIs
+
+### 06. HATEOAS | 06_03-Adding Hypermedia to Our API
