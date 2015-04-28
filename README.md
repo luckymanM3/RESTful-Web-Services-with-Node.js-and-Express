@@ -109,3 +109,12 @@ GET -> localhost/api/books/553f67e1ccaee53c0501de35
 
 
 DELETE -> localhost/api/books/553f67e1ccaee53c0501de35
+
+
+
+### 05. Testing | 05_01-Introduction
+
+Unit Testing -> mocha  
+Integration Tests -> supertests  
+
+### 05. Testing | 05_02-Controllers
