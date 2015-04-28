@@ -30,37 +30,40 @@ var routes = function(Book){
             });
         });
 
-    bookRouter.route('/:bookId')
-        .get(function(req, res){
-
-            if(req.query.genre){
-                query.genre = req.query.genre;
-            }
-
-            Book.findById(req.params.bookId, function(err, book){
-                if(err){
-                    res.status(500).send(err);
-                } else {
-                    res.json(book);
-                }
-            });
+    bookRouter.use('/:bookId', function(req, res, next){
+        if(req.query.genre){
+            query.genre = req.query.genre;
         }
-    )
-    .put(function(req, res){
+
         Book.findById(req.params.bookId, function(err, book){
             if(err){
                 res.status(500).send(err);
+            } else if (book) {
+                req.book = book;
+                next();
             } else {
-                book.title = req.body.title;
-                book.author = req.body.author;
-                book.genre = req.body.genre;
-                book.read = req.body.read;
-
-                book.save();
-
-                res.json(book);
+                res.json(404).send('no book found');
             }
         });
+    });
+
+
+    bookRouter.route('/:bookId')
+        .get(function(req, res){
+            res.json(req.book);
+        }
+    )
+    .put(function(req, res){
+
+        book.title = req.body.title;
+        book.author = req.body.author;
+        book.genre = req.body.genre;
+        book.read = req.body.read;
+
+        book.save();
+
+
+        res.json(req.book);
     });
 
     return bookRouter;
