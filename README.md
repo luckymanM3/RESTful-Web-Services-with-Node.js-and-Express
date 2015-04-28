@@ -30,3 +30,8 @@ http://localhost/api/books?genre=Science Fiction
 ### 02. Getting Data | 02_05-Getting a Single Item
 
 http://localhost/api/books/{id}
+
+
+### 03. Posting Data | 03_02-Using Bodyparser
+
+    npm install body-parser --save
