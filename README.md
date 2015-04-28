@@ -51,3 +51,10 @@ raw
     "genre": "Fiction",
     "author": "Jon Mills"
 }
+
+
+### 03. Posting Data | 03_04-Saving Data
+
+Same on the previous step and:
+
+POST -> localhost/api/books/553f67eeccaee53c0501de36
